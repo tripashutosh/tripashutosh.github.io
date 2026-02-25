@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#12131a"/>
+  <rect x="60" y="60" width="1080" height="555" rx="28" fill="#0b0c10" stroke="#242536" stroke-width="4"/>
+  <text x="100" y="170" fill="#e8e8ea" font-size="48" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial">Talk (Test)</text>
+  <text x="100" y="245" fill="#b6b6bf" font-size="30" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial">
+    Inverse Problems in Holographic QCD with PINNs
+  </text>
+  <text x="100" y="320" fill="#93c5fd" font-size="26" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial">
+    assets/talk-001.md
+  </text>
+</svg>
