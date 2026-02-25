@@ -21,6 +21,8 @@ body{
 a{ color:var(--link); text-decoration:none; }
 a:hover{ text-decoration:underline; }
 
+code{ color: var(--muted); }
+
 .container{
   width: min(var(--max), calc(100% - 2rem));
   margin: 0 auto;
@@ -93,6 +95,7 @@ a:hover{ text-decoration:underline; }
 .section h2{
   margin:0 0 0.9rem 0;
   font-size:1.45rem;
+  letter-spacing: 0.4px;
 }
 
 .grid-2{
@@ -108,12 +111,8 @@ a:hover{ text-decoration:underline; }
   padding: 1rem 1.05rem;
 }
 
-.publist{
-  padding-left: 1.1rem;
-}
-.publist li{
-  margin: 0.75rem 0;
-}
+.publist{ padding-left: 1.1rem; }
+.publist li{ margin: 0.75rem 0; }
 .pubtitle{ font-weight: 650; }
 .pubmeta{ color: var(--muted); }
 .publinks{ display:block; margin-top:0.25rem; }
@@ -128,12 +127,65 @@ a:hover{ text-decoration:underline; }
 .itemmeta{ color: var(--muted); }
 .itemlinks{ margin-left: 0.35rem; }
 
+.list-tight{ margin:0; padding-left: 1.05rem; }
+.list-tight li{ margin: 0.35rem 0; }
+
 .small{ font-size: 0.93rem; }
 .muted{ color: var(--muted); }
 
-.footer{
-  padding: 1.4rem 0;
+/* PDF embed */
+.pdf-wrap{
+  width:100%;
+  height: 80vh;
+  border:1px solid var(--line);
+  border-radius: 14px;
+  overflow:hidden;
+  background: var(--bg);
 }
+.pdf-wrap iframe{
+  width:100%;
+  height:100%;
+  border:0;
+}
+
+/* Talk card */
+.talk-card{
+  display:flex;
+  gap: 1rem;
+  align-items: stretch;
+}
+.talk-thumb{
+  display:block;
+  width: 220px;
+  flex: 0 0 220px;
+  border-radius: 14px;
+  overflow:hidden;
+  border: 1px solid var(--line);
+}
+.talk-thumb img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+.talk-body{ display:flex; flex-direction:column; gap:0.25rem; }
+
+/* Gallery */
+.gallery{
+  display:grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+.gallery img{
+  width:100%;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  background: var(--card);
+}
+
+.footer{ padding: 1.4rem 0; }
 .footer-row{
   display:flex;
   justify-content:space-between;
@@ -142,10 +194,11 @@ a:hover{ text-decoration:underline; }
 }
 
 @media (max-width: 720px){
-  .header-grid{
-    grid-template-columns: 1fr;
-  }
+  .header-grid{ grid-template-columns: 1fr; }
   .photo-block{ justify-content:flex-start; }
   .headshot{ width:140px; height:140px; }
   .grid-2{ grid-template-columns: 1fr; }
+  .talk-card{ flex-direction:column; }
+  .talk-thumb{ width:100%; flex: 0 0 auto; }
+  .gallery img{ height: 240px; }
 }
