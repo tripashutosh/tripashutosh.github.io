@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "talks": [
+    {
+      "id": "talk-001",
+      "title": "Inverse Problems in Holographic QCD with Physics-Informed Neural Networks",
+      "date": "2026-02-26",
+      "venue": "Test entry (replace with real venue)",
+      "file": "assets/talk-001.md",
+      "thumbnail": "assets/talk-001-thumb.svg"
+    }
+  ],
+  "publications": [
+    {
+      "id": "pub-001",
+      "title": "Inequivalence between the Euclidean and Lorentzian versions of the type IIB matrix model from Lefschetz thimble calculations",
+      "authors": ["Chien-Yu Chou", "Jun Nishimura", "Ashutosh Tripathi"],
+      "year": 2025,
+      "journal_url": "https://doi.org/10.1103/PhysRevLett.134.211601",
+      "arxiv_url": "https://arxiv.org/abs/2501.17798"
+    }
+  ],
+  "notes": [
+    {
+      "id": "note-001",
+      "title": "PINNs: training checklist and diagnostics (test note)",
+      "updated": "2026-02-26",
+      "file": "assets/note-001.md",
+      "meta": "assets/note-001.json"
+    }
+  ],
+  "travel_photos": [
+    {
+      "id": "travel-001",
+      "title": "Travel placeholder (replace image later)",
+      "date": "2026-02-26",
+      "image": "assets/travel-001.svg",
+      "meta": "assets/travel-001.json"
+    }
+  ]
+}
