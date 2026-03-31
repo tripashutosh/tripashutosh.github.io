@@ -171,18 +171,49 @@ code{ color: var(--muted); }
 .talk-body{ display:flex; flex-direction:column; gap:0.25rem; }
 
 /* Gallery */
-.gallery{
-  display:grid;
-  grid-template-columns: 1fr;
-  gap: 0.75rem;
+/* Container CSS: Defines the side-by-side orientation */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Desktop default: 3 columns side-by-side */
+  gap: 1.5rem; /* Space between the images */
+  margin-top: 2rem;
 }
-.gallery img{
-  width:100%;
-  height: 340px;
-  object-fit: cover;
-  border-radius: 16px;
-  border: 1px solid var(--line);
-  background: var(--card);
+
+/* Individual Item CSS: Groups picture and text */
+.gallery-item {
+  margin: 0; /* Reset default browser figure margins */
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Stack caption below image */
+  align-items: center;
+}
+
+/* Image CSS: Ensures high-quality images fit nicely */
+.gallery-item img {
+  width: 100%;
+  height: 250px; /* Force consistent height for uniformity */
+  object-fit: cover; /* Crop image rather than distorting it to fit the height */
+  border-radius: 4px; /* Optional: adds a slight corner curve */
+}
+
+/* Caption CSS: Small text below the image */
+.photo-caption {
+  font-size: 0.85rem;
+  color: #666; /* Match your "muted small" style */
+  margin-top: 0.75rem;
+  text-align: center;
+}
+
+/* Responsive Design for smaller screens (like mobile phones) */
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(1, 1fr); /* Switches to 1 column stacked on mobile */
+    gap: 2rem;
+  }
+  
+  .gallery-item img {
+    height: auto; /* Allow image to show full height on mobile */
+  }
 }
 
 .footer{ padding: 1.4rem 0; }
