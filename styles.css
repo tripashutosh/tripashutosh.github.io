@@ -194,7 +194,7 @@ a:hover{ text-decoration:underline; text-underline-offset: 2px; }
 .publinks{ display:flex; gap: 0.9rem; margin-top: 0.15rem; font-family: var(--sans); font-size: 0.84rem; }
 
 /* gallery */
-.gallery{ display:grid; grid-template-columns: repeat(2, 1fr); gap: 1.2rem; }
+.gallery{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
 .gallery-item{ margin:0; }
 .gallery-item img{
   width:100%; aspect-ratio: 4 / 3; object-fit: cover;
