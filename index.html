@@ -86,7 +86,7 @@
     <section id="news" class="section">
       <h2>News</h2>
       <ul class="news">
-        <li><span class="date">Aug 2026</span><span>Invited talks at the <a href="https://indico.global/event/17078/" target="_blank" rel="noopener">SIMIS–APCTP Meeting on AI Methods in Theoretical Physics</a> (Shanghai) and the <a href="https://sites.google.com/view/apctp-focus-program-2026/home" target="_blank" rel="noopener">APCTP Focus Program 2026</a> (Pohang).</span></li>
+        <li><span class="date">Aug 2026</span><span>Invited talks at the <a href="https://indico.global/event/17078/" target="_blank" rel="noopener">SIMIS–APCTP Meeting on AI Methods in Theoretical Physics</a> (Shanghai) and at <a href="https://sites.google.com/view/apctp-focus-program-2026/home" target="_blank" rel="noopener">Holography 2026</a>, the APCTP Focus Program in Pohang, where I also chaired a session.</span></li>
         <li><span class="date">Aug 2026</span><span>Led the workshop “Fundamental Physics, AI, and Inverse Problems” at the 2026 APEC STEM Young Researchers Forum, APCTP/POSTECH.</span></li>
         <li><span class="date">Jul 2026</span><span>Presented a poster on Krylov quantum diagonalization for matrix quantum mechanics at <a href="https://indico.global/event/16939/overview" target="_blank" rel="noopener">QuantHEP 2026</a>, Queen Mary University of London.</span></li>
         <li><span class="date">May 2026</span><span>Invited talk on deep-learning holographic QCD at <a href="https://apctp.org/theme/d/html/activities/activities01_read-pop.php?id=2523&amp;m_id=1305" target="_blank" rel="noopener">Quantum Geometry and Duality 2026-I</a>, KIAS, Seoul.</span></li>
@@ -102,6 +102,18 @@
       <h2>Research</h2>
       <div class="themes">
         <article class="theme">
+          <figure class="schematic" aria-hidden="false"><svg viewBox="0 0 240 170" role="img" aria-labelledby="sk1t"><title id="sk1t">Integration contour deformed from the real axis onto Lefschetz thimbles through saddle points in the complex plane</title><defs><marker id="ah1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="sk-fill-acc"/></marker></defs>
+<line x1="12" y1="128" x2="232" y2="128" class="sk-axis"/><line x1="26" y1="160" x2="26" y2="10" class="sk-axis"/>
+<text x="230" y="142" text-anchor="end" class="sk-lab">Re z</text><text x="32" y="18" class="sk-lab">Im z</text>
+<text x="200" y="122" class="sk-lab sk-muted">ℝ</text>
+<path d="M12,128 C55,128 62,62 92,62 S140,96 168,60 S205,128 232,128" class="sk-curve"/>
+<g class="sk-flow"><line x1="70" y1="126" x2="74" y2="96" marker-end="url(#ah1)"/><line x1="118" y1="126" x2="120" y2="90" marker-end="url(#ah1)"/><line x1="150" y1="126" x2="152" y2="84" marker-end="url(#ah1)"/><line x1="192" y1="126" x2="190" y2="98" marker-end="url(#ah1)"/></g>
+<circle cx="92" cy="62" r="4" class="sk-dot"/><circle cx="168" cy="60" r="4" class="sk-dot"/>
+<text x="92" y="50" text-anchor="middle" class="sk-lab">σ₁</text><text x="168" y="48" text-anchor="middle" class="sk-lab">σ₂</text>
+<text x="128" y="30" text-anchor="middle" class="sk-lab sk-acc">thimbles 𝒥σ</text>
+<text x="128" y="158" text-anchor="middle" class="sk-lab sk-muted">holomorphic gradient flow</text>
+</svg></figure>
+          <div class="theme-body">
           <h3>Lefschetz thimbles, the sign problem and matrix models</h3>
           <p>
             Monte Carlo simulation of theories with complex actions, using the generalized Lefschetz thimble method. I applied it to
@@ -109,20 +121,56 @@
             Euclidean and Lorentzian versions are not equivalent. I am now extending these methods to 2D U(1) lattice gauge theory
             with a θ term, where the sign problem and topological freezing appear together.
           </p>
-          <p class="theme-refs">PRL 134, 211601 (2025) · PhD thesis · manuscript in preparation</p>
+          <p class="theme-refs">PRL 134, 211601 (2025) · PhD thesis · 2 manuscripts in preparation</p>
+          </div>
         </article>
 
         <article class="theme">
+          <figure class="schematic" aria-hidden="false"><svg viewBox="0 0 240 170" role="img" aria-labelledby="sk2t"><title id="sk2t">Sample-based Krylov quantum diagonalization: time-evolution circuits are sampled into bitstrings, which span a subspace where the Hamiltonian is diagonalized</title><defs><marker id="ah2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="sk-fill-acc"/></marker></defs>
+<g class="sk-axis"><line x1="6" y1="38" x2="82" y2="38"/><line x1="6" y1="56" x2="82" y2="56"/><line x1="6" y1="74" x2="82" y2="74"/><line x1="6" y1="92" x2="82" y2="92"/></g>
+<rect x="12" y="28" width="50" height="74" rx="4" class="sk-box-acc"/>
+<text x="37" y="69" text-anchor="middle" class="sk-lab sk-acc">e<tspan dy="-6" class="sk-lab-s">−iHkΔt</tspan></text>
+<g class="sk-box"><rect x="68" y="32" width="12" height="12" rx="2"/><rect x="68" y="50" width="12" height="12" rx="2"/><rect x="68" y="68" width="12" height="12" rx="2"/><rect x="68" y="86" width="12" height="12" rx="2"/></g>
+<text x="44" y="120" text-anchor="middle" class="sk-lab sk-muted">quantum circuit</text>
+<line x1="88" y1="65" x2="106" y2="65" class="sk-arrow" marker-end="url(#ah2)"/>
+<g class="sk-mono"><text x="112" y="42">0110</text><text x="112" y="58">1010</text><text x="112" y="74">0111</text><text x="112" y="90">1001</text></g>
+<text x="128" y="120" text-anchor="middle" class="sk-lab sk-muted">samples</text>
+<line x1="150" y1="65" x2="168" y2="65" class="sk-arrow" marker-end="url(#ah2)"/>
+<g class="sk-box"><rect x="174" y="36" width="58" height="58" rx="4"/></g>
+<g class="sk-grid"><line x1="193" y1="36" x2="193" y2="94"/><line x1="213" y1="36" x2="213" y2="94"/><line x1="174" y1="55" x2="232" y2="55"/><line x1="174" y1="75" x2="232" y2="75"/></g>
+<g class="sk-fill-acc" opacity="0.85"><rect x="176" y="38" width="15" height="15"/><rect x="195" y="57" width="16" height="16"/><rect x="215" y="77" width="15" height="15"/></g>
+<text x="203" y="120" text-anchor="middle" class="sk-lab sk-muted">subspace H</text>
+<text x="120" y="152" text-anchor="middle" class="sk-lab sk-acc">diagonalize → ground state E₀</text>
+</svg></figure>
+          <div class="theme-body">
           <h3>Quantum algorithms for matrix quantum mechanics</h3>
           <p>
             Ground states of gauged matrix models on quantum hardware. With M. Hanada and H.-S. Jeong, I applied sample-based Krylov
             quantum diagonalization to the bosonic two-matrix model, which shares the commutator-squared interaction of the BFSS and
             BMN models, and ran it on IBM superconducting processors.
           </p>
-          <p class="theme-refs">Manuscript in preparation · APCTP Focus Program 2026 · QuantHEP 2026</p>
+          <p class="theme-refs">2 manuscripts in preparation (matrix models; Maldacena–Qi model) · Holography 2026 · QuantHEP 2026</p>
+          </div>
         </article>
 
         <article class="theme">
+          <figure class="schematic" aria-hidden="false"><svg viewBox="0 0 240 170" role="img" aria-labelledby="sk3t"><title id="sk3t">Physics-informed neural network maps quark-gluon plasma data to a bulk gravitational dual, trained with the bulk field equations</title><defs><marker id="ah3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="sk-fill-acc"/></marker></defs>
+<line x1="10" y1="92" x2="62" y2="92" class="sk-axis"/><line x1="12" y1="94" x2="12" y2="36" class="sk-axis"/>
+<path d="M14,48 C26,80 38,84 60,62" class="sk-curve"/>
+<text x="36" y="30" text-anchor="middle" class="sk-lab">η/s (T)</text><text x="36" y="110" text-anchor="middle" class="sk-lab sk-muted">QGP data</text>
+<line x1="68" y1="64" x2="84" y2="64" class="sk-arrow" marker-end="url(#ah3)"/>
+<g class="sk-net"><line x1="94" y1="44" x2="118" y2="34"/><line x1="94" y1="44" x2="118" y2="64"/><line x1="94" y1="44" x2="118" y2="94"/><line x1="94" y1="84" x2="118" y2="34"/><line x1="94" y1="84" x2="118" y2="64"/><line x1="94" y1="84" x2="118" y2="94"/><line x1="118" y1="34" x2="142" y2="64"/><line x1="118" y1="64" x2="142" y2="64"/><line x1="118" y1="94" x2="142" y2="64"/></g>
+<g class="sk-node"><circle cx="94" cy="44" r="5"/><circle cx="94" cy="84" r="5"/><circle cx="118" cy="34" r="5"/><circle cx="118" cy="64" r="5"/><circle cx="118" cy="94" r="5"/><circle cx="142" cy="64" r="5"/></g>
+<text x="118" y="114" text-anchor="middle" class="sk-lab sk-muted">PINN</text>
+<line x1="150" y1="64" x2="164" y2="64" class="sk-arrow" marker-end="url(#ah3)"/>
+<line x1="174" y1="28" x2="174" y2="100" class="sk-axis"/><line x1="218" y1="28" x2="218" y2="100" class="sk-horizon"/>
+<path d="M174,64 C186,40 196,88 208,58 S215,60 218,64" class="sk-curve"/>
+<text x="174" y="22" text-anchor="middle" class="sk-lab-s sk-muted">boundary</text><text x="218" y="22" text-anchor="middle" class="sk-lab-s sk-muted">horizon</text>
+<text x="196" y="114" text-anchor="middle" class="sk-lab sk-muted">bulk dual</text>
+<path d="M196,124 C196,146 118,146 118,124" class="sk-arrow" marker-end="url(#ah3)"/>
+<text x="120" y="160" text-anchor="middle" class="sk-lab sk-acc">loss = bulk EOM + dictionary</text>
+</svg></figure>
+          <div class="theme-body">
           <h3>Machine learning for holography</h3>
           <p>
             Physics-informed neural networks for the holographic inverse problem: reconstructing a gravity dual, including
@@ -130,6 +178,7 @@
             plasma.
           </p>
           <p class="theme-refs">Manuscript in preparation · talks at KIAS, SIMIS and Holography &amp; Quantum Matter 2026</p>
+          </div>
         </article>
       </div>
     </section>
@@ -138,7 +187,7 @@
     <section id="publications" class="section">
       <h2>Publications</h2>
       <p class="muted small">
-        Authors are listed alphabetically. Full and up-to-date lists on
+        Authors are mostly listed alphabetically. Full and up-to-date lists on
         <a href="https://inspirehep.net/authors/1671760" target="_blank" rel="noopener">INSPIRE</a> and
         <a href="https://scholar.google.com/citations?user=xsjttUwAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>.
       </p>
@@ -159,8 +208,12 @@
       <h3 class="subhead">In preparation</h3>
       <ul class="publist plain">
         <li>
-          <span class="pubtitle">Sample-based Krylov quantum diagonalization for bosonic matrix quantum mechanics</span>
-          <span class="pubmeta">M. Hanada, H.-S. Jeong, <span class="me">A. Tripathi</span></span>
+          <span class="pubtitle">Sampling an eternal traversable wormhole: operator size and the cost of sample-based quantum Krylov diagonalization in the Maldacena–Qi model</span>
+          <span class="pubmeta">M. Berenguer, H.-S. Jeong, <span class="me">A. Tripathi</span></span>
+        </li>
+        <li>
+          <span class="pubtitle">Efficient quantum simulations of bosonic matrix models using sample-based Krylov diagonalization</span>
+          <span class="pubmeta"><span class="me">A. Tripathi</span>, M. Hanada, H.-S. Jeong</span>
         </li>
         <li>
           <span class="pubtitle">Deep learning holographic QCD: gravity duals from transport properties of the quark-gluon plasma</span>
@@ -169,6 +222,10 @@
         <li>
           <span class="pubtitle">Lefschetz thimble simulations of two-dimensional U(1) gauge theory with a θ term</span>
           <span class="pubmeta">K. Miura, J. Nishimura, H. Ohata, W. Piensuk, <span class="me">A. Tripathi</span></span>
+        </li>
+        <li>
+          <span class="pubtitle">Monte Carlo studies of the IKKT matrix model: Euclidean vs Lorentzian signatures via Lefschetz thimbles</span>
+          <span class="pubmeta">C.-Y. Chou, J. Nishimura, <span class="me">A. Tripathi</span></span>
         </li>
       </ul>
 
@@ -247,10 +304,10 @@
         <div>
           <h3 class="subhead">Positions</h3>
           <ul class="timeline">
-            <li><span class="date">2025–</span><span><b>Postdoctoral Researcher</b>, APCTP, Pohang</span></li>
-            <li><span class="date">2025</span><span><b>Visitor</b>, RIKEN Theoretical Quantum Physics Laboratory (host: F. Nori), Apr–Sep</span></li>
-            <li><span class="date">2025</span><span><b>Visitor</b>, Queen Mary University of London (host: M. Hanada), Jun</span></li>
-            <li><span class="date">2022–25</span><span><b>Research Assistant</b>, KEK, Tsukuba</span></li>
+            <li><span class="date">2025–</span><span><b>Postdoctoral Researcher</b>, APCTP, Pohang (Junior Research Group: Quantum Information, Black Holes &amp; Holography), since Oct 2025</span></li>
+            <li><span class="date">2025–26</span><span><b>Student Trainee</b>, RIKEN Theoretical Quantum Physics Laboratory, Wako (host: F. Nori), Apr 2025 – Mar 2026</span></li>
+            <li><span class="date">2025</span><span><b>Visitor</b>, Queen Mary University of London (host: M. Hanada), June 2025</span></li>
+            <li><span class="date">2022–25</span><span><b>Research Assistant</b>, KEK, Tsukuba, Nov 2022 – Sep 2025</span></li>
           </ul>
           <h3 class="subhead">Education</h3>
           <ul class="timeline">
@@ -280,8 +337,9 @@
         <div>
           <h3 class="subhead">Organisation and outreach</h3>
           <ul class="timeline">
-            <li><span class="date">2026</span><span>Program lead and instructor, “Fundamental Physics, AI, and Inverse Problems”, APEC STEM Young Researchers Forum</span></li>
-            <li><span class="date">2026</span><span>Session chair, <a href="https://sites.google.com/view/apctp-chile-workshop" target="_blank" rel="noopener">Korea–Chile APCTP Workshop</a></span></li>
+            <li><span class="date">Aug 2026</span><span>Session chair, <a href="https://sites.google.com/view/apctp-focus-program-2026/home" target="_blank" rel="noopener">Holography 2026: Correlation and Entanglement in Quantum Matter</a> (APCTP Focus Program)</span></li>
+            <li><span class="date">Aug 2026</span><span>Program lead and instructor, “Fundamental Physics, AI, and Inverse Problems”, APEC STEM Young Researchers Forum</span></li>
+            <li><span class="date">Nov 2025</span><span>Session chair, <a href="https://sites.google.com/view/apctp-chile-workshop" target="_blank" rel="noopener">Korea–Chile APCTP Workshop: Gravity, Fields, and Matter</a></span></li>
             <li><span class="date">2024</span><span>Executive committee, <a href="https://www2.kek.jp/openhouse/2024/" target="_blank" rel="noopener">KEK Open House</a></span></li>
             <li><span class="date">2023</span><span>Student coordinator, <a href="https://conference-indico.kek.jp/event/231/" target="_blank" rel="noopener">KEK Theory Workshop</a></span></li>
           </ul>

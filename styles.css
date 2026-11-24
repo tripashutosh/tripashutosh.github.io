@@ -142,7 +142,7 @@ a:hover{ text-decoration:underline; text-underline-offset: 2px; }
   gap: 1rem;
   padding: 0.5rem 0;
 }
-.timeline li{ grid-template-columns: 4.4rem 1fr; padding: 0.3rem 0; }
+.timeline li{ grid-template-columns: 4.9rem 1fr; padding: 0.3rem 0; }
 .date{
   font-family: var(--sans);
   font-size: 0.82rem;
@@ -175,7 +175,29 @@ a:hover{ text-decoration:underline; text-underline-offset: 2px; }
   border-radius: 10px;
   padding: 1.2rem 1.35rem;
 }
+.theme{ display:grid; grid-template-columns: 230px 1fr; gap: 1.4rem; align-items:center; }
+.schematic{ margin:0; background: var(--bg); border:1px solid var(--line); border-radius: 8px; padding: 0.4rem; }
+.schematic svg{ display:block; width:100%; height:auto; }
 .theme h3{ margin:0 0 0.45rem; font-size: 1.15rem; }
+
+/* schematic drawing styles (follow light/dark tokens) */
+.sk-axis, .sk-grid, .sk-net{ stroke: var(--muted); stroke-width: 1; fill:none; opacity: 0.75; }
+.sk-net{ opacity: 0.45; }
+.sk-curve{ stroke: var(--accent); stroke-width: 2.4; fill: none; stroke-linecap: round; }
+.sk-arrow, .sk-flow line{ stroke: var(--accent); stroke-width: 1.4; fill:none; }
+.sk-flow line{ opacity: 0.7; }
+.sk-horizon{ stroke: var(--fg); stroke-width: 1.4; stroke-dasharray: 4 3; }
+.sk-dot{ fill: var(--fg); }
+.sk-node{ fill: var(--bg); stroke: var(--accent); stroke-width: 1.6; }
+.sk-box rect{ fill: none; stroke: var(--fg); stroke-width: 1.2; }
+.sk-box-acc{ fill: var(--accent-soft); stroke: var(--accent); stroke-width: 1.4; }
+.sk-fill-acc{ fill: var(--accent); }
+.sk-lab, .sk-lab-s, .sk-mono{ font-family: var(--sans); fill: var(--fg); }
+.sk-lab{ font-size: 10.5px; }
+.sk-lab-s{ font-size: 8px; }
+.sk-mono{ font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: 11px; }
+.sk-muted{ fill: var(--muted); }
+.sk-acc{ fill: var(--accent); font-weight: 600; }
 .theme p{ margin: 0 0 0.6rem; }
 .theme-refs{
   font-family: var(--sans);
@@ -215,5 +237,7 @@ a:hover{ text-decoration:underline; text-underline-offset: 2px; }
   .cols{ grid-template-columns: 1fr; gap: 1.2rem; }
   .news li, .talks li{ grid-template-columns: 1fr; gap: 0.1rem; }
   .gallery{ grid-template-columns: 1fr; }
+  .theme{ grid-template-columns: 1fr; }
+  .schematic{ max-width: 340px; }
   .section{ padding: 2rem 0; }
 }
